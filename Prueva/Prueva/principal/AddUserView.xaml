@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prueva.principal.AddUserView">
+    <ScrollView>
+        <StackLayout>
+            <Label Text="Agregar usuario"
+                   FontSize="Title"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Usuario:"
+                   TextColor="Black"
+                   FontSize="Subtitle"
+                   Margin="20,0,0,0"
+                   HorizontalOptions="Start"/>
+            <Entry x:Name="txtUsuario"
+                   Placeholder="Usuario"
+                   Keyboard="Text"
+                   MaxLength="100"
+                   ClearButtonVisibility="WhileEditing"
+                   Margin="20,5,20,5"/>
+
+            <Label Text="Contraseña:"
+                   TextColor="Black"
+                   FontSize="Subtitle"
+                   Margin="20,0,0,0"
+                   HorizontalOptions="Start"/>
+            <Entry x:Name="txtContrasena"
+                   Keyboard="Numeric"
+                   ClearButtonVisibility="WhileEditing"
+                   Margin="20,5,20,5"/>
+
+            <Label Text="Tipo:"
+                   TextColor="Black"
+                   FontSize="Subtitle"
+                   Margin="20,0,0,0"
+                   HorizontalOptions="Start"/>
+            <Entry x:Name="txtTipo"
+                   Placeholder="Tipo"
+                   Keyboard="Text"
+                   MaxLength="100"
+                   ClearButtonVisibility="WhileEditing"
+                   Margin="20,5,20,5"/>
+            <Label/>
+            <Button x:Name="btnGuardar"
+                Text="Guardar"
+                TextColor="#FFFFFF"
+                FontSize="15"
+                BackgroundColor="#44426E"
+                HeightRequest="40"
+                WidthRequest="300"
+                Margin="20"
+                HorizontalOptions="Center"/>
+            <Label/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
