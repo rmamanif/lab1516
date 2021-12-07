@@ -33,3 +33,21 @@ E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Pruev
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\ref\Prueva.dll
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.pdb
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.csproj.AssemblyReference.cache
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\bin\Debug\netstandard2.0\Prueva.deps.json
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\bin\Debug\netstandard2.0\Prueva.dll
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\bin\Debug\netstandard2.0\ref\Prueva.dll
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\bin\Debug\netstandard2.0\Prueva.pdb
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.csproj.AssemblyReference.cache
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\principal\AddUserView.xaml.g.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\principal\DetaUserView.xaml.g.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\principal\PrinUserView.xaml.g.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.AssemblyInfoInputs.cache
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.AssemblyInfo.cs
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.csproj.CoreCompileInputs.cache
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.dll
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\ref\Prueva.dll
+C:\Users\Angel Rivero\Source\Repos\lab1516\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.pdb

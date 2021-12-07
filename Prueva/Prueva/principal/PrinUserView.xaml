@@ -7,7 +7,7 @@
         <ToolbarItem Name="MenuItem5" Order="Primary" Icon="Refresh.png" Text="Refresh" Priority="0" Clicked="MenuItem2_Clicked"/>
     </ContentPage.ToolbarItems>
     <StackLayout>
-        <Label Text="Usuarios"
+        <Label Text="Películas"
                FontSize="Title"
                TextColor="Black"
                HorizontalOptions="Center" />

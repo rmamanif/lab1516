@@ -4,24 +4,24 @@
              x:Class="Prueva.principal.AddUserView">
     <ScrollView>
         <StackLayout>
-            <Label Text="Agregar usuario"
+            <Label Text="Agregar película"
                    FontSize="Title"
                    TextColor="Black"
                    HorizontalOptions="Center"/>
 
-            <Label Text="Usuario:"
+            <Label Text="Nombre de Película:"
                    TextColor="Black"
                    FontSize="Subtitle"
                    Margin="20,0,0,0"
                    HorizontalOptions="Start"/>
             <Entry x:Name="txtUsuario"
-                   Placeholder="Usuario"
+                   Placeholder="Nombre"
                    Keyboard="Text"
                    MaxLength="100"
                    ClearButtonVisibility="WhileEditing"
                    Margin="20,5,20,5"/>
 
-            <Label Text="Contraseña:"
+            <Label Text="Recomendación:"
                    TextColor="Black"
                    FontSize="Subtitle"
                    Margin="20,0,0,0"
@@ -31,19 +31,19 @@
                    ClearButtonVisibility="WhileEditing"
                    Margin="20,5,20,5"/>
 
-            <Label Text="Tipo:"
+            <Label Text="Género de película:"
                    TextColor="Black"
                    FontSize="Subtitle"
                    Margin="20,0,0,0"
                    HorizontalOptions="Start"/>
             <Entry x:Name="txtTipo"
-                   Placeholder="Tipo"
+                   Placeholder="Género"
                    Keyboard="Text"
                    MaxLength="100"
                    ClearButtonVisibility="WhileEditing"
                    Margin="20,5,20,5"/>
             <Label/>
-            <Label Text="Fecha:"
+            <Label Text="Fecha de emisión:"
                    TextColor="Black"
                    FontSize="Subtitle"
                    Margin="20,0,0,0"
