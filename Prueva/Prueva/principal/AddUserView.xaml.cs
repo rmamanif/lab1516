@@ -45,7 +45,7 @@ namespace Prueva.principal
                     user.name = txtUsuario.Text;
                     user.rating = int.Parse(txtContrasena.Text);
                     user.category = txtTipo.Text;
-
+                    user.release_date = txtFecha.Date.ToString("yyyy-MM-dd");
                     var request = new HttpRequestMessage();
                     request.RequestUri = new Uri("https://api1516.herokuapp.com/series/");
                     request.Method = HttpMethod.Post;
@@ -55,23 +55,21 @@ namespace Prueva.principal
                     request.Content = c;
                     var client = new HttpClient();
                     HttpResponseMessage response = await client.SendAsync(request);
-                    if (response.StatusCode == HttpStatusCode.OK)
+                    if (response.StatusCode == HttpStatusCode.Created)
                     {
-                        await DisplayAlert("Notificación", "El usuario se a creado con éxito :" + txtUsuario.Text, "OK");
+                        await DisplayAlert("Notificación", "Película creada con éxito" + txtUsuario.Text, "OK");
                         await Navigation.PopAsync();
                     }
                     else
                     {
-                        await DisplayAlert("Notificación", "Error al conectar", "OK");
-                        Console.WriteLine(response);
-                        Console.WriteLine(user);
+                        await DisplayAlert("Notificación","Error al insertar la película", "OK");
                         await Navigation.PopToRootAsync();
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                await DisplayAlert("Notificación", "Error al conectar", "OK");
+                await DisplayAlert("Notificación",Convert.ToString(ex), "OK");
                 await Navigation.PopToRootAsync();
             }
         }

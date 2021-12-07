@@ -36,14 +36,14 @@ namespace Prueva.principal
                     try
                     {
                         var request = new HttpRequestMessage();
-                        request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user);
+                        request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user+"/");
                         request.Method = HttpMethod.Delete;
                         request.Headers.Add("Accpet", "application/json");
                         var client = new HttpClient();
                         HttpResponseMessage response = await client.SendAsync(request);
-                        if (response.StatusCode == HttpStatusCode.OK)
+                        if (response.StatusCode == HttpStatusCode.NoContent)
                         {
-                            await DisplayAlert("Notificación", "El usuario se a eliminado con éxito :" + txtUsuario.Text, "OK");
+                            await DisplayAlert("Notificación", "Eliminado", "OK");
                             await Navigation.PopAsync();
                         }
                         else
@@ -89,9 +89,10 @@ namespace Prueva.principal
                             user.name = txtUsuario.Text;
                             user.rating = int.Parse(txtContrasena.Text);
                             user.category = txtTipo.Text;
+                            user.release_date = txtFecha.Date.ToString("yyyy-MM-dd");
                             
                             var request = new HttpRequestMessage();
-                            request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user);
+                            request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user+"/");
                             request.Method = HttpMethod.Put;
                             request.Headers.Add("Accpet", "application/json");
                             var payload = JsonConvert.SerializeObject(user);
@@ -106,7 +107,7 @@ namespace Prueva.principal
                             }
                             else
                             {
-                                await DisplayAlert("Notificación", "Error al conectar", "OK");
+                                await DisplayAlert("Notificación", "xd", "OK");
                                 await Navigation.PopToRootAsync();
                             }
                         }
@@ -148,7 +149,7 @@ namespace Prueva.principal
                 try
                 {
                     var request = new HttpRequestMessage();
-                    request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user);
+                    request.RequestUri = new Uri("https://api1516.herokuapp.com/series/" + id_user+"/");
                     request.Method = HttpMethod.Get;
                     request.Headers.Add("Accpet", "application/json");
                     var client = new HttpClient();
@@ -156,12 +157,13 @@ namespace Prueva.principal
                     if (response.StatusCode == HttpStatusCode.OK)
                     {
                         string content = await response.Content.ReadAsStringAsync();
-                        var resultado = JsonConvert.DeserializeObject<List<User>>(content);
-                        if (resultado.Count > 0)
+                        var resultado = JsonConvert.DeserializeObject<User>(content);
+                        if (resultado != null)
                         {
-                            txtUsuario.Text = resultado[0].name;
-                            txtContrasena.Text = Convert.ToString(resultado[0].rating);
-                            txtTipo.Text = resultado[0].category;
+                            txtUsuario.Text = resultado.name;
+                            txtContrasena.Text = Convert.ToString(resultado.rating);
+                            txtTipo.Text = resultado.category;
+                            txtFecha.Date = DateTime.Parse(resultado.release_date);
                         }
                         else
                         {
@@ -174,9 +176,9 @@ namespace Prueva.principal
                         await Navigation.PopToRootAsync();
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    await DisplayAlert("Notificación", "Error al conectar", "OK");
+                    await DisplayAlert("Notificación", Convert.ToString(ex), "OK");
                     await Navigation.PopToRootAsync();
                 }
             });

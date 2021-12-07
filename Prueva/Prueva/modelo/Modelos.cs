@@ -12,8 +12,7 @@ namespace Prueva.modelo
         public int id { get; set; }
         public string name { get; set; }
         public int rating { get; set; }
-        
-       // public DateTime release_date { get; set }
+        public string release_date { get; set; }
         public string category { get; set; }
     }
 }

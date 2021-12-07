@@ -43,6 +43,15 @@
                    ClearButtonVisibility="WhileEditing"
                    Margin="20,5,20,5"/>
             <Label/>
+            <Label Text="Fecha:"
+                   TextColor="Black"
+                   FontSize="Subtitle"
+                   Margin="20,0,0,0"
+                   HorizontalOptions="Start"/>
+            <DatePicker x:Name="txtFecha" Margin="20,5,20,5">
+                <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+            </DatePicker>
+            <Label/>
             <Button x:Name="btnGuardar"
                 Text="Guardar"
                 TextColor="#FFFFFF"

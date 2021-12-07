@@ -32,3 +32,4 @@ E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\XamlC
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.dll
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\ref\Prueva.dll
 E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.pdb
+E:\Ciclo5\Amm\Api-Rest-XamarinForms\Prueva\Prueva\obj\Debug\netstandard2.0\Prueva.csproj.AssemblyReference.cache
